@@ -4,7 +4,7 @@ from setuptools import setup, find_packages, Extension
 
 _wiringpi2 = Extension(
     '_wiringpi2',
-    include_dirs=['WiringPi/wiringPi','WiringPi/devLib'],
+#    include_dirs=['WiringPi/wiringPi','WiringPi/devLib'],
     sources=[
         'WiringPi/devLib/ds1302.c',
         'WiringPi/devLib/gertboard.c',

@@ -70,26 +70,29 @@
 // Pi model types and version numbers
 //	Intended for the GPIO program Use at your own risk.
 
-#define	PI_MODEL_UNKNOWN	0
-#define	PI_MODEL_A		1
-#define	PI_MODEL_B		2
-#define	PI_MODEL_BP		3
-#define	PI_MODEL_CM		4
+#define	PI_MODEL_UNKNOWN  0
+#define	PI_MODEL_A        1
+#define	PI_MODEL_B        2
+#define	PI_MODEL_BP       3
+#define	PI_MODEL_CM       4
+#define	PI_MODEL_AP       5
+#define	PI_MODEL_ODROIDC  6
 
 #define	PI_VERSION_UNKNOWN	0
-#define	PI_VERSION_1		1
-#define	PI_VERSION_1_1		2
-#define	PI_VERSION_1_2		3
-#define	PI_VERSION_2		4
+#define	PI_VERSION_1        1
+#define	PI_VERSION_1_1      2
+#define	PI_VERSION_1_2      3
+#define	PI_VERSION_2        4
 
-#define	PI_MAKER_UNKNOWN	0
-#define	PI_MAKER_EGOMAN		1
-#define	PI_MAKER_SONY		2
-#define	PI_MAKER_QISDA		3
+#define	PI_MAKER_UNKNOWN    0
+#define	PI_MAKER_EGOMAN     1
+#define	PI_MAKER_SONY       2
+#define	PI_MAKER_QISDA      3
+#define	PI_MAKER_HARDKERNEL 4
 
-extern const char *piModelNames    [5] ;
+extern const char *piModelNames    [7] ;
 extern const char *piRevisionNames [5] ;
-extern const char *piMakerNames    [4] ;
+extern const char *piMakerNames    [5] ;
 
 
 //	Intended for the GPIO program Use at your own risk.

@@ -6,7 +6,7 @@ class nes(object):
     return readNesJoystick(*args)
 
 class Serial(object):
-  device = '/dev/ttyAMA0'
+  device = '/dev/ttyS2'
   baud = 9600
   serial_id = 0
   def printf(self,*args):

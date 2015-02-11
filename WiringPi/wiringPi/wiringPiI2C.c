@@ -218,15 +218,21 @@ int wiringPiI2CSetupInterface (const char *device, int devId)
 
 int wiringPiI2CSetup (const int devId)
 {
-  int rev ;
   const char *device ;
+  int model, rev, mem, maker, overVolted ;
 
-  rev = piBoardRev () ;
+  piBoardId (&model, &rev, &mem, &maker, &overVolted) ;
 
-  if (rev == 1)
-    device = "/dev/i2c-0" ;
-  else
+  if ( model == PI_MODEL_ODROIDC )
     device = "/dev/i2c-1" ;
+  else  {
+    rev = piBoardRev () ;
+
+    if (rev == 1)
+      device = "/dev/i2c-0" ;
+    else
+      device = "/dev/i2c-1" ;
+  }
 
   return wiringPiI2CSetupInterface (device, devId) ;
 }
